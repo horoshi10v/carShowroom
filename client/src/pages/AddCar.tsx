@@ -31,10 +31,10 @@ const AddCar = () => {
                     color,
                     image,
                     description,
-                    engine_type,
+                engine: { engine_type,
                     engine_size,
                     engine_power,
-                    engine_fuel_consumption
+                    engine_fuel_consumption}
                 }
             )
         });

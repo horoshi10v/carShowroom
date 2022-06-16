@@ -30,7 +30,7 @@ func NewCar(c *fiber.Ctx) error {
 		Engine: models.Engine{
 			//	Type:            data["type"],
 			//	Size:            data["size"],
-			Power: data["power"],
+			Power: data["engine_power"],
 			//	FuelConsumption: data["fuel_consumption"],
 		},
 	}

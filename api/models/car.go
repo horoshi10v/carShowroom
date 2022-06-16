@@ -33,16 +33,16 @@ type Car struct {
 	Color        string `json:"color"`
 	Images       string `json:"image"`
 	Description  string `json:"description"`
-	Engine       Engine `json:"engine" gorm:"foreignKey:Id"`
+	Engine       Engine `json:"engine" gorm:"embedded;embeddedPrefix:engine_"`
 	VisitorList  VisitorList
 }
 
 type Engine struct {
-	Id              uint   `json:"id" gorm:"primaryKey"`
-	Type            string `json:"type"`
-	Size            string `json:"size"`
+	Id              uint   `json:"id"`
+	Type            string `json:"engine_type"`
+	Size            string `json:"engine_size"`
 	Power           string `json:"engine_power"`
-	FuelConsumption string `json:"fuel"`
+	FuelConsumption string `json:"engine_fuel_consumption"`
 }
 
 func (Car) TableName() string {
