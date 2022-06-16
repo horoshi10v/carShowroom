@@ -39,6 +39,9 @@ const Nav = () => {
                         <li className="nav-item">
                             <Link to="/register" className="nav-link" >Register</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to="/addCar" className="nav-link" >Add car</Link>
+                        </li>
                     </ul>
                     {/*<form className="d-flex">*/}
                     {/*    <input className="form-control me-2" type="search"*/}

@@ -12,4 +12,7 @@ func Setup(app *fiber.App) {
 	app.Get("/user", controllers.User)
 	app.Post("/logout", controllers.Logout)
 
+	app.Get("/cars", controllers.GetCars)
+	app.Post("/addCar", controllers.NewCar)
+
 }
